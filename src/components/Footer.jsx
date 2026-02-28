@@ -11,7 +11,7 @@ export default function Footer() {
               <span className="footer__logo-text">MRX CORE</span>
             </div>
             <p className="footer__tagline">
-              We build, run, and scale your food business.<br />
+              We build, run, and scale your business systems.<br />
               You sit. We sweat.
             </p>
           </div>
@@ -34,8 +34,8 @@ export default function Footer() {
 
           <div className="footer__links-group">
             <h4>Contact</h4>
-            <a href="mailto:hello@mrxcore.com">hello@mrxcore.com</a>
-            <a href="tel:+919876543210">+91 98765 43210</a>
+            <a href="mailto:mrxcore.official@gmail.com">mrxcore.official@gmail.com</a>
+            <a href="tel:+919028546772">+91 90285 46772</a>
             <a href="#cta">Book a Call</a>
           </div>
         </div>

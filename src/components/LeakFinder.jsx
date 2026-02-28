@@ -5,9 +5,9 @@ export default function LeakFinder() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.15 })
 
   const leakExamples = [
-    { name: 'Rahul', leak: '₹45K dead stock about to be reordered', time: '12 min' },
-    { name: 'Priya', leak: 'Supplier overcharging 12% for 8 months', time: '18 min' },
-    { name: 'Vikram', leak: '₹2.1L working capital stuck in slow inventory', time: '22 min' },
+    { name: 'Client A', leak: 'Dead stock about to be reordered', time: '12 min' },
+    { name: 'Client B', leak: 'Supplier overcharging for months unnoticed', time: '18 min' },
+    { name: 'Client C', leak: 'Working capital stuck in slow-moving inventory', time: '22 min' },
   ]
 
   return (
@@ -24,7 +24,7 @@ export default function LeakFinder() {
             <div className="leak__step-item glass-card">
               <div className="leak__step-num">1</div>
               <div>
-                <h4>Factory Walkthrough</h4>
+                <h4>Business Walkthrough</h4>
                 <p>In-person or via video call — whatever works for you</p>
               </div>
             </div>
@@ -45,7 +45,7 @@ export default function LeakFinder() {
           </div>
 
           <div className={`leak__examples reveal ${inView ? 'visible' : ''} reveal-delay-2`}>
-            <h3 className="leak__examples-title">Recent Leak Discoveries</h3>
+            <h3 className="leak__examples-title">Common Leak Discoveries</h3>
             {leakExamples.map((ex, i) => (
               <div key={i} className="leak__example glass-card">
                 <div className="leak__example-avatar">

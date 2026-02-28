@@ -8,7 +8,7 @@ export default function Solution() {
     {
       number: '01',
       title: 'We Build',
-      desc: 'Auto-inventory, FSSAI shield, production scheduler, WhatsApp bot, supplier automation, expiry tracking, dashboard.',
+      desc: 'Custom ERP, inventory automation, compliance tracking, WhatsApp bot, supplier management, real-time dashboard — tailored to your manufacturing workflow.',
       icon: (
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
           <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
@@ -18,7 +18,7 @@ export default function Solution() {
     {
       number: '02',
       title: 'We Run',
-      desc: '4:30 AM panic response, team training, monthly audits, data entry. We handle the chaos so you don\'t have to.',
+      desc: 'Rapid response ops support, team training, monthly audits, data management. We handle the chaos so you don\'t have to.',
       icon: (
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
           <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
@@ -28,7 +28,7 @@ export default function Solution() {
     {
       number: '03',
       title: 'You Own',
-      desc: 'All code, all data, full IP. Handover Month 12. Stay or leave — the system works independently.',
+      desc: 'All code, all data, full IP. Complete handover after engagement. Stay or leave — the system works independently.',
       icon: (
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
           <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
@@ -38,7 +38,7 @@ export default function Solution() {
     {
       number: '04',
       title: 'You Scale',
-      desc: 'Monthly 5-min voice audit. Revenue climbs. Expand location, SKUs, and sales channels — while you sleep.',
+      desc: 'Monthly 5-min voice audit. Revenue climbs. Expand locations, product lines, and sales channels — while you sleep.',
       icon: (
         <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
           <polyline points="22,12 18,12 15,21 9,3 6,12 2,12"/>
@@ -55,7 +55,7 @@ export default function Solution() {
         <div className={`reveal ${inView ? 'visible' : ''}`}>
           <span className="section-label">The Solution</span>
           <h2 className="section-title">The 4 Pillars of<br />"You Sit, We Sweat"</h2>
-          <p className="section-subtitle">Custom software + 12-month operations management. Not an agency — we're operators.</p>
+          <p className="section-subtitle">Custom software + 90-day operations guarantee. Not an agency — we're operators.</p>
         </div>
 
         <div className="solution__grid">

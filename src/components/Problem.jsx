@@ -7,7 +7,7 @@ export default function Problem() {
   const leaks = [
     { icon: '⏱️', title: '₹8,000/day', subtitle: 'Revenue leaking daily', desc: 'Every single day without systems = money down the drain' },
     { icon: '🔥', title: '6 Hours/day', subtitle: 'Lost to operations', desc: 'Time spent on tasks that should be automated' },
-    { icon: '💀', title: '₹30L/year', subtitle: 'Gone forever', desc: '12 months of compounded operational losses' },
+    { icon: '💀', title: 'Lakhs/year', subtitle: 'Gone forever', desc: 'Months of compounded operational losses adding up' },
     { icon: '🧠', title: '2,000 Hours', subtitle: 'Dead productivity', desc: 'A year of your life spent firefighting' },
   ]
 
@@ -52,9 +52,9 @@ export default function Problem() {
           <p>
             I bought the laptop. I watched the YouTube videos. I hired the freelancer. I tried the software.
             But at 11 PM, I'm still updating Excel sheets, begging suppliers for stock updates, and praying
-            the FSSAI inspector doesn't show up tomorrow.
+            things don't fall apart tomorrow.
           </p>
-          <span className="problem__mantra-attr">— Every food manufacturer before Mrx Core</span>
+          <span className="problem__mantra-attr">— Every manufacturer before Mrx Core</span>
         </div>
       </div>
     </section>

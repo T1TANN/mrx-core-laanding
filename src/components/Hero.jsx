@@ -26,12 +26,12 @@ export default function Hero() {
 
         <h1 className="hero__title">
           We <span className="hero__title-accent">Build</span>, Run &amp; Scale<br />
-          Your Food Business<br />
-          <span className="hero__title-highlight">in 7 Days</span>
+          Your Business Systems<br />
+          <span className="hero__title-highlight">in 20 Days</span>
         </h1>
 
         <p className="hero__subtitle">
-          The "Business-in-a-Box Flip" for food manufacturers doing ₹50L+ who want to stop being the bottleneck. Custom software + 12-month operations management. You sit. We sweat.
+          The "Business-in-a-Box Flip" for manufacturers doing ₹5L–25L/month who want to stop being the bottleneck. Custom software + 90-day operations guarantee. You sit. We sweat.
         </p>
 
         <div className="hero__actions">
@@ -48,17 +48,17 @@ export default function Hero() {
 
         <div className="hero__stats">
           <div className="hero__stat">
-            <span className="hero__stat-number">47+</span>
-            <span className="hero__stat-label">Businesses Flipped</span>
+            <span className="hero__stat-number">90-Day</span>
+            <span className="hero__stat-label">Performance Guarantee</span>
           </div>
           <div className="hero__stat-divider"></div>
           <div className="hero__stat">
-            <span className="hero__stat-number">₹30L+</span>
-            <span className="hero__stat-label">Avg. Revenue Gain</span>
+            <span className="hero__stat-number">7+</span>
+            <span className="hero__stat-label">Manufacturing Sectors</span>
           </div>
           <div className="hero__stat-divider"></div>
           <div className="hero__stat">
-            <span className="hero__stat-number">7</span>
+            <span className="hero__stat-number">20</span>
             <span className="hero__stat-label">Days to Go-Live</span>
           </div>
         </div>

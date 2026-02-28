@@ -5,7 +5,7 @@ export default function Guarantee() {
   const [ref, inView] = useInView({ triggerOnce: true, threshold: 0.15 })
 
   const antiAgency = [
-    { agency: 'Builds and disappears', mrx: 'Builds, runs, and stays 12 months' },
+    { agency: 'Builds and disappears', mrx: 'Builds, runs, and stays for 90 days' },
     { agency: 'Delivers "software"', mrx: 'Delivers a running business system' },
     { agency: 'No accountability', mrx: 'Monthly audits with signed guarantees' },
     { agency: '50+ clients', mrx: 'Only 6 clients — personal attention' },
@@ -51,10 +51,10 @@ export default function Guarantee() {
             </div>
             <h3 className="guarantee__promise-title">"ROI Up, System Runs, or We Work Free"</h3>
             <p className="guarantee__promise-desc">
-              Don't find leaks? Full refund of ₹5L + ₹1L for your time. This is a contract. We sign it. You sleep.
+              If we don't deliver measurable results within 90 days, we continue working for free until we do. This is a contract. We sign it. You sleep.
             </p>
             <div className="guarantee__quals">
-              <span className="guarantee__qual">₹50L+ revenue</span>
+              <span className="guarantee__qual">₹5L–25L/month revenue</span>
               <span className="guarantee__qual">2+ team members</span>
               <span className="guarantee__qual">Willing to delegate</span>
               <span className="guarantee__qual">Respond within 48 hrs</span>

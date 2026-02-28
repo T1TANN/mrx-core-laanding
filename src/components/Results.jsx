@@ -8,7 +8,7 @@ export default function Results() {
     {
       name: 'Rahul',
       age: 38,
-      business: 'Mumbai Snacks',
+      business: 'Mumbai — Snacks Manufacturing',
       avatar: '🧑‍💼',
       before: [ 'Excel at 2 AM every night', '47 WhatsApp urgents daily', '3 years without a single weekend off' ],
       after: [ '2-week Europe trip with family', 'Revenue increased +18%', 'Dad said: "I\'m proud of you."' ],
@@ -17,19 +17,19 @@ export default function Results() {
     {
       name: 'Priya',
       age: 34,
-      business: 'Bangalore Cloud Kitchen',
+      business: 'Bangalore — Cloud Kitchen',
       avatar: '👩‍💼',
       before: [ '₹1.8Cr revenue, ₹4L profit (2.2%)', '14-hour workdays, 7 days a week', 'Supplier overcharging 12% for 8 months' ],
       after: [ '₹3.4Cr revenue, 36% margin', 'Effective hourly: ₹78,000', 'First Sunday off in 2 years' ],
-      highlight: '₹30L+ annual revenue increase',
+      highlight: 'Massive annual revenue increase',
     },
     {
       name: 'Vikram',
       age: 41,
-      business: 'Delhi Family Business',
+      business: 'Delhi — Family Business',
       avatar: '👨‍💼',
       before: [ 'Dad wouldn\'t delegate anything', '"This is how we\'ve always done it"', '₹2.1L working capital stuck in inventory' ],
-      after: [ 'Business ₹1.1Cr → ₹4.2Cr valuation', 'Dad: "Expand to Jaipur."', 'Smooth generational transition' ],
+      after: [ 'Business valuation multiplied 4x', 'Dad: "Expand to Jaipur."', 'Smooth generational transition' ],
       highlight: '4x business valuation increase',
     },
   ]
@@ -41,8 +41,8 @@ export default function Results() {
       <div className="container">
         <div className={`results__header reveal ${inView ? 'visible' : ''}`}>
           <span className="section-label">Proof</span>
-          <h2 className="section-title">The ₹30L Flip</h2>
-          <p className="section-subtitle">Real stories from food manufacturers who made the switch.</p>
+          <h2 className="section-title">Real Transformations</h2>
+          <p className="section-subtitle">Stories from manufacturers who made the switch.*</p>
         </div>
 
         <div className="results__grid">
@@ -85,6 +85,10 @@ export default function Results() {
             </div>
           ))}
         </div>
+
+        <p className={`results__disclaimer reveal ${inView ? 'visible' : ''} reveal-delay-4`} style={{ textAlign: 'center', opacity: 0.5, fontSize: '0.8rem', marginTop: '1.5rem' }}>
+          *Names changed for privacy. Results based on client engagements; individual outcomes may vary.
+        </p>
       </div>
     </section>
   )

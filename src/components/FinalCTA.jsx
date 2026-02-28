@@ -50,7 +50,7 @@ export default function FinalCTA() {
           </div>
 
           <p className="final-cta__ps">
-            <strong>P.S.</strong> Rahul was skeptical too. Then we found his ₹45K leak in 12 minutes. Book the call. Or keep bleeding. <strong>Your move.</strong>
+            <strong>P.S.</strong> Skeptical? We get it. That's why the first call is free — we find a real leak in your business live. No pitch. Just proof. <strong>Your move.</strong>
           </p>
         </div>
       </div>

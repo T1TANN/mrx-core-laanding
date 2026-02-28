@@ -1,0 +1,131 @@
+.leak {
+    overflow: hidden;
+}
+
+.leak__header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.leak__header .section-label {
+    justify-content: center;
+}
+
+.leak__header .section-subtitle {
+    margin: 0 auto;
+}
+
+.leak__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.leak__steps {
+    display: grid;
+    gap: 16px;
+}
+
+.leak__step-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 24px;
+}
+
+.leak__step-num {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 107, 53, 0.1);
+    border: 1px solid rgba(255, 107, 53, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--accent-primary);
+    flex-shrink: 0;
+}
+
+.leak__step-item h4 {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.leak__step-item p {
+    font-size: 0.88rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.leak__examples {
+    padding: 0;
+}
+
+.leak__examples-title {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: var(--text-secondary);
+}
+
+.leak__example {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    margin-bottom: 12px;
+}
+
+.leak__example-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: var(--accent-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.leak__example-info {
+    flex: 1;
+}
+
+.leak__example-name {
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--accent-secondary);
+}
+
+.leak__example-desc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-top: 4px;
+}
+
+.leak__example-time {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.leak__example-time strong {
+    color: var(--success);
+    font-size: 0.95rem;
+}
+
+@media (max-width: 768px) {
+    .leak__content {
+        grid-template-columns: 1fr;
+    }
+}

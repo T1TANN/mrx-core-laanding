@@ -1,0 +1,132 @@
+.results {
+    overflow: hidden;
+}
+
+.results__header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.results__header .section-label {
+    justify-content: center;
+}
+
+.results__header .section-subtitle {
+    margin: 0 auto;
+}
+
+.results__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    gap: 24px;
+}
+
+.results__card {
+    padding: 32px;
+}
+
+.results__card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.results__card-avatar {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background: rgba(255, 107, 53, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.results__card-name {
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.results__card-biz {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+
+.results__card-highlight {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: rgba(255, 107, 53, 0.08);
+    border: 1px solid rgba(255, 107, 53, 0.15);
+    border-radius: var(--radius-sm);
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--accent-secondary);
+    margin-bottom: 24px;
+}
+
+.results__card-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.results__card-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.results__card-tag--before {
+    background: rgba(239, 68, 68, 0.1);
+    color: var(--danger);
+}
+
+.results__card-tag--after {
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--success);
+}
+
+.results__card-comparison ul {
+    list-style: none;
+}
+
+.results__card-comparison li {
+    font-size: 0.83rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    padding-left: 14px;
+    position: relative;
+    margin-bottom: 6px;
+}
+
+.results__card-before li::before {
+    content: '✗';
+    position: absolute;
+    left: 0;
+    color: var(--danger);
+    font-size: 0.7rem;
+}
+
+.results__card-after li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--success);
+    font-weight: 700;
+    font-size: 0.7rem;
+}
+
+@media (max-width: 768px) {
+    .results__grid {
+        grid-template-columns: 1fr;
+    }
+}

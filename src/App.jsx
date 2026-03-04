@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Lenis from 'lenis'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
@@ -12,9 +12,15 @@ import Pricing from './components/Pricing'
 import LeakFinder from './components/LeakFinder'
 import FinalCTA from './components/FinalCTA'
 import Footer from './components/Footer'
+import WhyUs from './components/WhyUs'
+import Portfolio from './components/Portfolio'
+import Testimonials from './components/Testimonials'
+import BookCallModal from './components/BookCallModal'
 import './App.css'
 
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
   useEffect(() => {
     // Smooth scroll with Lenis
     const lenis = new Lenis({
@@ -60,7 +66,7 @@ function App() {
       <Navbar />
 
       <main className="main-content">
-        <Hero />
+        <Hero onOpenModal={() => setIsModalOpen(true)} />
 
         {/* Sections with opaque backgrounds so they scroll over the 3D scene */}
         <div className="sections-wrapper">
@@ -68,15 +74,20 @@ function App() {
           <Problem />
           <Solution />
           <HowItWorks />
+          <WhyUs />
+          <Portfolio />
+          <Testimonials />
           <Results />
           <LeakFinder />
           <Guarantee />
           <Pricing />
-          <FinalCTA />
+          <FinalCTA onOpenModal={() => setIsModalOpen(true)} />
         </div>
       </main>
 
       <Footer />
+
+      <BookCallModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </div>
   )
 }

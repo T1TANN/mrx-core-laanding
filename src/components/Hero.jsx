@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import './Hero.css'
+import './Hero.css'
 
-export default function Hero() {
+export default function Hero({ onOpenModal }) {
   const heroRef = useRef()
   const [opacity, setOpacity] = useState(1)
 
@@ -35,10 +36,10 @@ export default function Hero() {
         </p>
 
         <div className="hero__actions">
-          <a href="#cta" className="cta-button hero__cta" id="hero-cta">
+          <a href="#book" onClick={(e) => { e.preventDefault(); onOpenModal(); }} className="cta-button hero__cta" id="hero-cta">
             Book Free 30-Min Leak Finder
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M5 12h14M12 5l7 7-7 7"/>
+              <path d="M5 12h14M12 5l7 7-7 7" />
             </svg>
           </a>
           <a href="#how-it-works" className="cta-button-outline" id="hero-secondary-cta">

@@ -11,7 +11,7 @@ export default function Portfolio() {
         {
             title: 'Inventory Forecasting Engine',
             category: 'Data Analytics',
-            metric: 'Prevented ₹10L in stockouts',
+            metric: 'Reduced stockouts by 85%',
             image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=800',
         },
         {

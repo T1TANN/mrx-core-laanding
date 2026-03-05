@@ -4,20 +4,20 @@ export default function Testimonials() {
     const testimonials = [
         {
             quote: "MRX didn't just build us software; they rebuilt our operations. We went live in 18 days and saw our throughput increase by 22% in the first month.",
-            name: "Rajesh Patel",
-            role: "Operations Director, Apex Manufacturing",
+            name: "Operations Director",
+            role: "Automotive Parts Manufacturer",
             rating: 5
         },
         {
-            quote: "Before MRX, we were running a ₹15L/month facility on spreadsheets and prayer. Their custom dashboard gave me my weekends back.",
-            name: "Sanjay Gupta",
-            role: "Founder, Gupta Auto Parts",
+            quote: "Before MRX, we were running a high-volume facility on spreadsheets and prayer. Their custom dashboard gave me my weekends back and increased our margins significantly.",
+            name: "Founder",
+            role: "Equipment Manufacturer",
             rating: 5
         },
         {
             quote: "The only agency I've worked with that actually understands the factory floor. Their 'Business-in-a-Box' is exactly what they promised.",
-            name: "Meera Reddy",
-            role: "CEO, Reddy Precision",
+            name: "CEO",
+            role: "Precision Engineering Firm",
             rating: 5
         }
     ]

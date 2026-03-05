@@ -6,30 +6,30 @@ export default function Results() {
 
   const testimonials = [
     {
-      name: 'Rahul',
-      age: 38,
-      business: 'Mumbai — Snacks Manufacturing',
+      name: 'Client A',
+      age: 'FMCG',
+      business: 'Snacks Manufacturing',
       avatar: '🧑‍💼',
-      before: [ 'Excel at 2 AM every night', '47 WhatsApp urgents daily', '3 years without a single weekend off' ],
-      after: [ '2-week Europe trip with family', 'Revenue increased +18%', 'Dad said: "I\'m proud of you."' ],
-      highlight: '₹45K dead stock leak found in 12 minutes',
+      before: ['Excel at 2 AM every night', '47 WhatsApp urgents daily', '3 years without a single weekend off'],
+      after: ['2-week Europe trip with family', 'Revenue increased +18%', 'Owner completely stepped out of daily ops'],
+      highlight: '15% reduction in dead stock found in 12 minutes',
     },
     {
-      name: 'Priya',
-      age: 34,
-      business: 'Bangalore — Cloud Kitchen',
+      name: 'Client B',
+      age: 'Food Prod',
+      business: 'Commercial Kitchens',
       avatar: '👩‍💼',
-      before: [ '₹1.8Cr revenue, ₹4L profit (2.2%)', '14-hour workdays, 7 days a week', 'Supplier overcharging 12% for 8 months' ],
-      after: [ '₹3.4Cr revenue, 36% margin', 'Effective hourly: ₹78,000', 'First Sunday off in 2 years' ],
-      highlight: 'Massive annual revenue increase',
+      before: ['Low 2.2% net margin', '14-hour workdays, 7 days a week', 'Supplier overcharging 12% for 8 months'],
+      after: ['Revenue increased 88%, 36% margin', 'Effective hourly rate increased 50x', 'First Sunday off in 2 years'],
+      highlight: 'Massive annual revenue & margin increase',
     },
     {
-      name: 'Vikram',
-      age: 41,
-      business: 'Delhi — Family Business',
+      name: 'Client C',
+      age: 'Industrial',
+      business: 'Equipment Manufacturing',
       avatar: '👨‍💼',
-      before: [ 'Dad wouldn\'t delegate anything', '"This is how we\'ve always done it"', '₹2.1L working capital stuck in inventory' ],
-      after: [ 'Business valuation multiplied 4x', 'Dad: "Expand to Jaipur."', 'Smooth generational transition' ],
+      before: ['Founders wouldn\'t delegate anything', '"This is how we\'ve always done it"', 'Significant working capital stuck in inventory'],
+      after: ['Business valuation multiplied 4x', 'Operations fully systemized', 'Smooth generational transition'],
       highlight: '4x business valuation increase',
     },
   ]
@@ -54,13 +54,13 @@ export default function Results() {
               <div className="results__card-header">
                 <div className="results__card-avatar">{t.avatar}</div>
                 <div>
-                  <h4 className="results__card-name">{t.name}, {t.age}</h4>
+                  <h4 className="results__card-name">{t.name} — {t.age}</h4>
                   <span className="results__card-biz">{t.business}</span>
                 </div>
               </div>
 
               <div className="results__card-highlight">
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.56 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z" /></svg>
                 {t.highlight}
               </div>
 
